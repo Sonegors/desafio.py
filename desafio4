@@ -1,0 +1,18 @@
+
+na=int(input ('digite um numero inteiro e positivo,não pode ser 1:'))
+while na:
+    if na ==1:
+        na=int(input ('digite novamente um numero inteiro e positivo,não pode ser 1:'))
+    if na !=1:
+        nb=int(input ('digite um numero inteiro e positivo,não pode ser 2:'))
+        while nb:
+            if nb == 2:
+                nb=int(input ('digite novamente um numero inteiro e positivo,não pode ser 2:'))
+            if nb != 2:
+                nc = 0
+                while nc not in (10,11,12,13,14,15):
+                    nc=int(input('digite um numero inteiro e positivo,tem que estar entre 10 a 15:'))
+                    #print (f'{nc =}') 
+                    if nc >=10 or nc <=15:                   
+                       print (na + nb / nc * nb * na) 
+                       exit()
